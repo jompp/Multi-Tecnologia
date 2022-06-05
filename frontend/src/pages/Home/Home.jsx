@@ -16,25 +16,25 @@ export function Home() {
                             <h3>Coleta de dados</h3>
 
                             <p id="p-first">
-                                Os coletores digitais tem como finalidade atualizar as <br />
-                                bases cadastrais e cartográficas, de forma <br />
+                                Os coletores digitais tem como finalidade atualizar as
+                                bases cadastrais e cartográficas, de forma
                                 automatizada, segura e com alta produtividade.
                             </p>
                         </div>
                         <div className='paragrafo'>
                             <h3>Cadastros</h3>
                             <p id="p-second">
-                                Utilizamos a gestão espacial do Cadastro Imobiliário, <br />
-                                Mobiliário e Logradouros em um ambiente comum de <br />
+                                Utilizamos a gestão espacial do Cadastro Imobiliário,
+                                Mobiliário e Logradouros em um ambiente comum de
                                 Geoprocessamento de dados.
                             </p>
                         </div>
                         <div className='paragrafo'>
                             <h3>Plano Diretor</h3>
                             <p id="p-third">
-                                Abrange toda a extensão territorial da Cidade, e <br />
-                                consiste na conversão e Geocodificação dos <br />
-                                zoneamentos e suas características definidas em <br />
+                                Abrange toda a extensão territorial da Cidade, e
+                                consiste na conversão e Geocodificação dos
+                                zoneamentos e suas características definidas em
                                 legislação vigente.
                             </p>
                         </div>

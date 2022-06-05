@@ -1,0 +1,165 @@
+p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h3,
+a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#home {
+    background-color: #F0F0F0;
+    color: #212121;
+
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+}
+
+#brand {
+    width: 100%;
+    height: 285px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    background-color: #3367D6;
+}
+
+#services-container {
+    width: 100%;
+    height: 315px;
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#services-container #services-header {
+    margin-top: 32px;
+}
+
+#services-container #paragrafos {
+
+    width: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 65px;
+
+}
+
+.paragrafo {
+    display: flex;
+
+    width: 350px;
+
+    height: 100%;
+
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.paragrafo h3 {
+    color: #3367D6;
+
+    margin-bottom: 16px;
+}
+
+.paragrafo p {
+    line-height: 24px;
+}
+
+#p-first {
+    text-align: left;
+}
+
+#p-second {
+    text-align: center;
+}
+
+#p-third {
+    text-align: right;
+}
+
+#contatos-container {
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: #3A3A3A;
+    color: white;
+}
+
+#contatos-container #contatos-border {
+    height: 100%;
+
+    width: 85%;
+
+    border-top: solid 4px #3367D6;
+    border-bottom: solid 4px #3367D6;
+
+}
+
+#contatos-container #contatos-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    height: 50%;
+
+    border-bottom: solid 2px #3367D6;
+}
+
+#contatos-container #contatos-text h2 {
+    margin-bottom: 20px;
+}
+
+#contatos-container #ancoras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    gap: 180px;
+
+    height: 50%;
+
+    border-top: solid 2px #3367D6;
+}
+
+#contatos-container #ancoras a {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 210px;
+}

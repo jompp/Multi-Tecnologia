@@ -6,7 +6,7 @@ export function Home() {
             <header id="header"></header>
 
             <main>
-                <div id='brand'><h1>MULTI GEOTECNOLOGIA</h1></div> {/* background-img */}
+                <div id='home-brand'><h1>MULTI GEOTECNOLOGIA</h1></div> {/* background-img */}
 
                 <div id="services-container">
                     <header id="services-header"><h1>NOSSOS SERVIÇOS</h1></header>

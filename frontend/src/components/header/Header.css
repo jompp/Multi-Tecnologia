@@ -7,6 +7,7 @@ header, figure, ul {
     width: 100%;
     background-color: #ffff;
     position: fixed;
+    z-index: 99;
 }
 
 header {
@@ -47,10 +48,10 @@ header label {
 header label span {
     position: absolute;
     display: block;
-    height: 5px;
+    height: 4px;
     width: 100%;
     border-radius: 30px;
-    background: rgb(0,123,191);
+    background: #007bbf;
     transition: .25s ease-in-out;
 }
 
@@ -86,10 +87,14 @@ header ul {
     min-width: 200px;
 }
 
+header a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 header li {
     position: relative;
     cursor: pointer;
-    font-weight: 600;
     max-width: max-content;
     text-align: center;
 }
@@ -101,7 +106,7 @@ header li:before {
     height: 2.3px;
     bottom: -5px;
     left: 0;
-    background-color: rgb(0,123,191);
+    background-color: #007bbf;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -148,7 +153,7 @@ header li:hover:before {
         right: -100%;
         width: 40vw;
         height: fit-content;
-        background: white;
+        background: #ffff;
         box-shadow: 0 0 .8em #4b4b4b;
         flex-direction: column;
         align-items: center;

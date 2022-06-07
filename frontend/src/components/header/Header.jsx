@@ -18,11 +18,11 @@ export function Header() {
                 <span></span>
               </label>
               <ul>
-                  <li>Página Incial</li>
-                  <li>Nossos Serviços</li>
-                  <li>Cases</li>
-                  <li>Seja um Parceiro</li>
-                  <li id='lastOneHeader'>Contato</li>
+                  <li><a>Página Incial</a></li>
+                  <li><a>Nossos Serviços</a></li>
+                  <li><a>Cases</a></li>
+                  <li><a>Seja um Parceiro</a></li>
+                  <li><a>Contato</a></li>
               </ul>
           </nav>
       </header>

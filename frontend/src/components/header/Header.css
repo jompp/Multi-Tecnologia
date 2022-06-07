@@ -90,11 +90,11 @@ header ul {
 header a {
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;    
 }
 
 header li {
     position: relative;
-    cursor: pointer;
     max-width: max-content;
     text-align: center;
 }
@@ -123,6 +123,16 @@ header li:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+header li.active:before {
+    height: 3.2px;
+    color: #006ba4;
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
 }
 
 @media (max-width: 1300px) {

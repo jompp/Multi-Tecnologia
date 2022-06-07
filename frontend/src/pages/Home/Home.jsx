@@ -1,12 +1,10 @@
 import './Home.css'
+import logo from '../../images/logo.png'
 
 export function Home() {
     return (
         <div id="home">
-            <header id="header"></header>
-
             <main>
-                <div id='home-brand'><h1>MULTI GEOTECNOLOGIA</h1></div> {/* background-img */}
 
                 <div id="services-container">
                     <header id="services-header"><h1>NOSSOS SERVIÇOS</h1></header>
@@ -39,8 +37,23 @@ export function Home() {
                             </p>
                         </div>
                     </div>
+                </div>
 
+                <div id="about-us-container">
+                    <div id="about-us">
+                        <h1>SOBRE NÓS</h1>
+                        <img src={logo} alt="Logo" />
 
+                        <p>
+                            A Multi Geotecnologia oferece uma eficiente estrutura de serviços
+                            e profissionais qualificados para a geração de mapas georreferenciados
+                            e obtenção de informações cadastrais, aliada ao desenvolvimento
+                            de sistemas de informações geográficas e sistemas gerenciais,
+                            incluindo consultoria, treinamento e suporte técnico,
+                            proporcionando aos clientes e usuários rapidez, precisão e
+                            estratégia nas decisões, garantindo melhores e mais bem sucedidos resultados.
+                        </p>
+                    </div>
                 </div>
 
                 <div id="contatos-container">
@@ -56,9 +69,6 @@ export function Home() {
                     </div>
                 </div>
             </main>
-
-
-            <footer></footer>
         </div>
     )
 }

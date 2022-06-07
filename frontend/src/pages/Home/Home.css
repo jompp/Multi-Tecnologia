@@ -1,45 +1,44 @@
-p {
-    font-weight: 400;
-    font-size: 15px;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-h3,
-a {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#home-brand {
-    background-color: #F0F0F0;
-    color: #212121;
-
+#about-us-container {
     width: 100%;
-}
-
-#header {
-    width: 100%;
-    height: 55px;
     background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
 }
 
-#home-brand {
-    width: 100%;
-    height: 285px;
+#about-us {
+
+    width: 85%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    color: white;
 
-    background: url("../../images/fachada.jpg") center no-repeat;
+    padding: 32px 5px 40px 5px;
 
-    background-size: cover;
+    /*     border-bottom: 2px solid #d9d9d9; */
+}
 
+
+#about-us img {
+    height: 100px;
+}
+
+#about-us h1 {
+    color: #212121;
+
+    margin-bottom: 32px;
+}
+
+#about-us p {
+    margin-top: 45px;
+    line-height: 24px;
 }
 
 #services-header {
@@ -50,14 +49,15 @@ a {
     width: 100%;
     height: fit-content;
 
+    height: 315px;
 
+    background-color: #f0f0f0;
 
     display: flex;
     align-items: center;
 
     flex-direction: column;
 
-    margin-bottom: 50px;
 }
 
 #services-container #services-header {
@@ -130,8 +130,8 @@ a {
 
     width: 85%;
 
-    border-top: solid 4px #3367D6;
-    border-bottom: solid 4px #3367D6;
+    /*     border-top: solid 4px #3367D6;
+    border-bottom: solid 4px #3367D6; */
 
 }
 
@@ -148,7 +148,7 @@ a {
 
     height: 50%;
 
-    border-bottom: solid 2px #3367D6;
+    border-bottom: solid 1px #3367D6;
 }
 
 #contatos-container #contatos-text h2 {
@@ -166,7 +166,7 @@ a {
 
     height: 50%;
 
-    border-top: solid 2px #3367D6;
+    border-top: solid 1px #3367D6;
 }
 
 #contatos-container #ancoras a {
@@ -176,11 +176,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-footer {
-    width: 100%;
-    height: 210px;
 }
 
 @media (max-width:1300px) {
@@ -198,7 +193,18 @@ footer {
     }
 }
 
+@media (max-width:1200px) {
+    #services-container {
+        height: 350px;
+    }
+}
+
 @media (max-width:770px) {
+
+    #services-container {
+        height: fit-content;
+    }
+
     #services-container #paragrafos {
 
         width: 85%;

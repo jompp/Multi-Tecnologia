@@ -1,8 +1,18 @@
 import './Cases.css'
+import { Header } from '../../components/header/Header'
+import { Footer } from '../../components/footer/Footer'
 
 export function Cases() {
     return (
+    <>
+        <Header />
+        <div className='space-complement'></div>
+
+        <div id='brand'>
+            <h1>Cases</h1>
+        </div>
         <div className="cases-main">
+            
             <table className="cases-table">
                 <tr>
                     <th>MUNICÍPIO</th>
@@ -72,5 +82,8 @@ export function Cases() {
                 <tr></tr>
             </table>
         </div>
+        <Footer />
+     </>
+        
     )
 }

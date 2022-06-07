@@ -1,9 +1,19 @@
 import './Home.css'
 import logo from '../../images/logo.png'
+import { Header } from '../../components/header/Header'
+import { Footer } from '../../components/footer/Footer'
 
 export function Home() {
     return (
-        <div id="home">
+        <>
+            <Header />
+
+            <div className='space-complement'></div>
+
+            <div id='brand'>
+                <h1>Multi Geotecnologia</h1>
+            </div>
+            <div id="home">
             <main>
 
                 <div id="services-container">
@@ -70,5 +80,8 @@ export function Home() {
                 </div>
             </main>
         </div>
+        <Footer />
+        </>
+        
     )
 }

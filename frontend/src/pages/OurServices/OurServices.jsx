@@ -4,8 +4,7 @@ import logo from '../../images/logo.png'
 export function OurServices() {
     return (
         <div>
-            <main>
-                <div id='ourServices-brand'><h1>Nossos Serviços</h1></div> {/* background-img */}
+            <main className='our-services-main'>
 
                 <img id="logo-img" src={logo} alt="Logo" />
 
@@ -31,7 +30,6 @@ export function OurServices() {
                 </div>
 
             </main>
-            <footer></footer>
         </div>
 
     )

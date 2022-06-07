@@ -20,12 +20,6 @@ a {
     width: 100%;
 }
 
-#header {
-    width: 100%;
-    height: 55px;
-    background-color: white;
-}
-
 #home-brand {
     width: 100%;
     height: 285px;
@@ -42,7 +36,7 @@ a {
 
 }
 
-#services-header {
+#services-section {
     color: #212121;
 }
 
@@ -60,7 +54,7 @@ a {
     margin-bottom: 50px;
 }
 
-#services-container #services-header {
+#services-container #services-section {
     margin-top: 32px;
 }
 

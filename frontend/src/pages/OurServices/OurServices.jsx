@@ -4,7 +4,6 @@ import logo from '../../images/logo.png'
 export function OurServices() {
     return (
         <div>
-            <header id="header"></header>
             <main>
                 <div id='ourServices-brand'><h1>Nossos Serviços</h1></div> {/* background-img */}
 

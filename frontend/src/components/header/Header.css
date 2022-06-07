@@ -99,6 +99,11 @@ header li {
     text-align: center;
 }
 
+header li a {
+    text-decoration: none;
+    color: #000000; 
+}
+
 header li:before {
     content: "";
     position: absolute;
@@ -149,7 +154,7 @@ header li:hover:before {
 
     header ul {
         position: absolute;
-        top: 7vh;
+        top: 6.9vh;
         right: -100%;
         width: 40vw;
         height: fit-content;

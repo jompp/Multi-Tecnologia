@@ -1,9 +1,20 @@
 import './Home.css'
 import logo from '../../images/logo.png'
+import { Outlet } from 'react-router-dom'
+import { Header } from '../../components/header/Header'
+import { Footer } from '../../components/footer/Footer'
 
 export function Home() {
     return (
-        <div id="home">
+        <>
+            <Header />
+
+            <div className='space-complement'></div>
+
+            <div id='brand'>
+            
+            </div>
+            <div id="home">
             <main>
 
                 <div id="services-container">
@@ -70,5 +81,8 @@ export function Home() {
                 </div>
             </main>
         </div>
+        <Footer />
+        </>
+        
     )
 }

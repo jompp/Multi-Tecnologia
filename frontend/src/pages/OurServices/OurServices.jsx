@@ -1,9 +1,18 @@
 import './OurServices.css'
 import logo from '../../images/logo.png'
+import { Header } from '../../components/header/Header'
+import { Footer } from '../../components/footer/Footer'
 
 export function OurServices() {
     return (
-        <div>
+        <>
+            <Header />
+            <div className='space-complement'></div>
+
+            <div id='brand'>
+            
+            </div>
+            <div>
             <main className='our-services-main'>
 
                 <img id="logo-img" src={logo} alt="Logo" />
@@ -31,6 +40,7 @@ export function OurServices() {
 
             </main>
         </div>
-
+        <Footer />
+    </>
     )
 }

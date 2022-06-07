@@ -4,7 +4,7 @@ import logo from '../../images/logo.png'
 export function OurServices() {
     return (
         <div>
-            <main>
+            <main className='our-services-main'>
 
                 <img id="logo-img" src={logo} alt="Logo" />
 

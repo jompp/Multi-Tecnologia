@@ -1,0 +1,41 @@
+.cases-main {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cases-table {
+    width: 85%;
+
+    border-collapse: collapse;
+
+    margin-top: 50px;
+}
+
+.cases-table th {
+    text-align: center;
+    border-bottom: 2px solid #3367D6;
+
+    background-color: #f0f0f0;
+
+    border-left: 1px solid #bbbaba;
+    border-right: 1px solid #bbbaba;
+
+    padding: 10px;
+
+}
+
+.cases-table td {
+
+    text-align: center;
+    padding: 10px;
+
+    border: 1px solid #bbbaba;
+}
+
+.cases-table .status {
+    color: #3367D6;
+}

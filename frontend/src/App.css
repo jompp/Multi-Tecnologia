@@ -13,10 +13,9 @@ a {
     font-weight: 600;
 }
 
-#header {
+.space-complement {
     width: 100%;
     height: 55px;
-    background-color: white;
 }
 
 #brand {

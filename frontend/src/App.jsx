@@ -1,5 +1,7 @@
+import { Header } from './components/header/Header'
 import { Home } from './pages/Home/Home'
 import { OurServices } from './pages/OurServices/OurServices'
+import { Cases } from './pages/Cases/Cases'
 
 import './App.css'
 import { useState } from 'react'
@@ -11,17 +13,17 @@ function App() {
   return (
     <div>
 
-      <header id="header">
-        <button onClick={() => setPage("Home")}>Home</button>
-        <button onClick={() => setPage("Nossos Serviços")}>Nossos Serviços</button>
-      </header>
+      <Header changePage={setPage} />
 
-      <div id='brand'><h1>{page == "Home" ? "Multi Geotecnologia" : ''} {page == "Nossos Serviços" ? "Nossos Serviços" : ''}</h1></div>
+      <div className='space-complement'></div>
 
+      <div id='brand'>
+        <h1>{page == "Home" ? "Multi Geotecnologia" : ''} {page == "Nossos Serviços" ? "Nossos Serviços" : ''} {page == "Cases" ? "Cases" : ''}</h1>
+      </div>
 
       {page == "Home" ? <Home /> : null}
       {page == "Nossos Serviços" ? <OurServices /> : null}
-
+      {page == "Cases" ? <Cases /> : null}
 
       <footer></footer>
     </div>

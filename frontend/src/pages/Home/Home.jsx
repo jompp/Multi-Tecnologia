@@ -7,7 +7,7 @@ export function Home() {
             <main>
 
                 <div id="services-container">
-                    <header id="services-header"><h1>NOSSOS SERVIÇOS</h1></header>
+                    <section id="services-header"><h1>NOSSOS SERVIÇOS</h1></section>
 
                     <div id="paragrafos">
                         <div className='paragrafo'>

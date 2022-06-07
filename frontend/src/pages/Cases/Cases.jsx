@@ -1,7 +1,6 @@
 import './Cases.css'
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
-import { Outlet } from 'react-router-dom'
 
 export function Cases() {
     return (
@@ -10,7 +9,7 @@ export function Cases() {
         <div className='space-complement'></div>
 
         <div id='brand'>
-            
+            <h1>Cases</h1>
         </div>
         <div className="cases-main">
             

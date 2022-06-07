@@ -2,7 +2,13 @@ import React from 'react'
 import './Header.css'
 import logo from '../../images/logo.png'
 import { Link } from 'react-router-dom'
-import { Outlet } from 'react-router-dom'
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'auto'
+    });
+  }
 
   export function Header() {
   return (
@@ -20,15 +26,14 @@ import { Outlet } from 'react-router-dom'
             <span></span>
           </label>
           <ul>
-            <li><Link to="/">Página Inicial</Link></li>
-            <li><Link to="/servicos">Nossos Serviços</Link></li>
-            <li><Link to="/cases">Cases</Link></li>
-            <li><Link to="/">Seja um Parceiro</Link></li>
-            <li><Link to="/">Contato</Link></li>
+            <li onClick={scrollToTop}><Link to="/">Página Inicial</Link></li>
+            <li onClick={scrollToTop}><Link to="/servicos">Nossos Serviços</Link></li>
+            <li onClick={scrollToTop}><Link to="/cases">Cases</Link></li>
+            <li onClick={scrollToTop}><Link to="/">Seja um Parceiro</Link></li>
+            <li onClick={scrollToTop}><Link to="/">Contato</Link></li>
           </ul>
         </nav>
       </header>
-      <Outlet />
     </div>
   )
 }

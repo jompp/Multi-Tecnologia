@@ -45,7 +45,7 @@ export function Home() {
                         <img src={logo} alt="Logo" />
 
                         <p>
-                            A Multi Geotecnologia oferece uma eficiente estrutura de serviços
+                            A Multi Geotecnologia - Soluções em Geoprocessamento oferece uma eficiente estrutura de serviços
                             e profissionais qualificados para a geração de mapas georreferenciados
                             e obtenção de informações cadastrais, aliada ao desenvolvimento
                             de sistemas de informações geográficas e sistemas gerenciais,

@@ -24,7 +24,7 @@ export function Header({ changePage }) {
             <li onClick={() => changePage("Nossos Serviços")}>Nossos Serviços</li>
             <li onClick={() => changePage("Cases")}>Cases</li>
             <li>Seja um Parceiro</li>
-            <li id='lastOneHeader'>Contato</li>
+            <li>Contato</li>
           </ul>
         </nav>
       </header>

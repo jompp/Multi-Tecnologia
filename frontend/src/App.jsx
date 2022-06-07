@@ -5,6 +5,7 @@ import { Cases } from './pages/Cases/Cases'
 
 import './App.css'
 import { useState } from 'react'
+import { Footer } from './components/footer/Footer'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
       {page == "Nossos Serviços" ? <OurServices /> : null}
       {page == "Cases" ? <Cases /> : null}
 
-      <footer></footer>
+      <Footer />
     </div>
 
   )

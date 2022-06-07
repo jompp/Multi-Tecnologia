@@ -55,9 +55,6 @@ export function Home() {
                     </div>
                 </div>
             </main>
-
-
-            <footer></footer>
         </div>
     )
 }

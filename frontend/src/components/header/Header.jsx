@@ -7,12 +7,19 @@ export default function Header() {
     <header>
         <figure>
             <img src={logo} alt="Logo" />
-            <figcaption>Multi Geotecnologia - Soluções em Geoprocessamento</figcaption>
+            <figcaption><h1>Multi Geotecnologia - Soluções em Geoprocessamento</h1></figcaption>
         </figure>
         <nav>
+            <input className="menu-hamburguer" type="checkbox" id="menu-checkbox" />
+            <label className="menu-hamburguer" htmlFor="menu-checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
             <ul>
                 <li>Página Incial</li>
                 <li>Nossos Serviços</li>
+                <li>Cases</li>
                 <li>Seja um Parceiro</li>
                 <li id='lastOneHeader'>Contato</li>
             </ul>

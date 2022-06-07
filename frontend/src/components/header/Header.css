@@ -4,22 +4,86 @@ header, figure, ul {
 }
 
 header {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1rem 2rem;
 }
 
 header img {
-    max-width: 83px;
+    max-width: 77px;
     cursor: pointer;
+    margin-right: .8rem;
 }
 
+header h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+#menu-checkbox {
+    visibility: hidden;
+}
+
+header label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 18px;
+    width: 30px;
+    bottom: 14px;
+}
+
+header label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: rgb(0,123,191);
+    transition: .25s ease-in-out;
+}
+
+header label span:nth-child(1) {
+    top: 0;
+}
+
+header label span:nth-child(2) {
+    top: 8px;
+}
+
+header label span:nth-child(3) {
+    top: 16px;
+}
+
+#menu-checkbox:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu-checkbox:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-checkbox:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+ 
 header ul {
     list-style-type: none;
+    gap: 1.7rem;
+    min-width: 200px;
 }
 
 header li {
     position: relative;
     cursor: pointer;
+    font-weight: 600;
+    max-width: max-content;
+    text-align: center;
 }
 
 header li:before {
@@ -29,7 +93,7 @@ header li:before {
     height: 2.3px;
     bottom: -5px;
     left: 0;
-    background-color: rgba(0,123,191);
+    background-color: rgb(0,123,191);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -43,6 +107,63 @@ header li:hover:before {
     transform: scaleX(1);
 }
 
-header li:not(.lastOneHeader) {
-    margin-right: 1rem;
+@media (max-width: 1300px) {
+    header {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1200px) {
+    header figcaption {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    header figcaption {
+        display: block;
+        max-width: 19rem;
+    }
+
+    header ul {
+        position: absolute;
+        top: 7vh;
+        right: -100%;
+        width: 40vw;
+        height: fit-content;
+        background: #CAC9C9;
+        flex-direction: column;
+        align-items: center;
+        transition: all 2s;
+        padding: 3.5rem 0;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    #menu-checkbox:checked ~ ul {
+        right: 0;
+    }
+
+    #menu-checkbox:checked ~ ul {
+        right: 0;
+    }
+}
+
+@media (max-width: 535px) {
+    header figcaption {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        margin: 1rem 3rem;
+    }
 }

@@ -2,17 +2,13 @@ import './Home.css'
 import logo from '../../images/logo.png'
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
+import { Brand } from '../../components/brand/Brand'
 
 export function Home() {
     return (
         <>
             <Header />
-
-            <div className='space-complement'></div>
-
-            <div id='brand'>
-                <h1>Multi Geotecnologia</h1>
-            </div>
+            <Brand sectionTitle='Multi Geotecnologia'/>
             <div id="home">
             <main>
 

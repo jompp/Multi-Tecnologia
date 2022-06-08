@@ -2,16 +2,13 @@ import './OurServices.css'
 import logo from '../../images/logo.png'
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
+import { Brand } from '../../components/brand/Brand'
 
 export function OurServices() {
     return (
         <>
             <Header />
-            <div id='servicos' className='space-complement'></div>
-
-            <div id='brand'>
-                <h1>Nossos Serviços</h1>
-            </div>
+            <Brand sectionTitle='Nossos Serviços'/>
             <div>
             <main className='our-services-main'>
 

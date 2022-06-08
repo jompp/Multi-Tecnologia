@@ -127,7 +127,7 @@ header li:hover:before {
 
 header li.active:before {
     height: 3.2px;
-    color: #006ba4;
+    background-color: #005e90;
     visibility: visible;
     -webkit-transform: none;
     transform: none;
@@ -175,7 +175,6 @@ header li.active:before {
         transition: all 2s;
         padding: 3.5rem 0;
         border-radius: 10px 0 0 10px;
-
     }
     
     #menu-checkbox:checked ~ ul {
@@ -184,6 +183,15 @@ header li.active:before {
 
     #menu-checkbox:checked ~ ul {
         right: 0;
+    }
+
+    header li.active:before {
+        bottom: 0;
+        border-radius: 100%;
+        width: 6px;
+        height: 6px;
+        left: 115%;
+        bottom: calc(50% - 4px);
     }
 }
 

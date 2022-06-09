@@ -21,7 +21,7 @@ footer {
     width: 120px;
 }
 
-.footer-contact-us-box button {
+.animated-btn {
     font-size: .9rem;
     padding: .8rem 2rem;
     cursor: pointer;
@@ -30,7 +30,7 @@ footer {
     background-color: transparent;
 }
 
-.footer-contact-us-box button:hover {
+.animated-btn:hover {
     color: #ffff;
     background-color: #007bbf;
     transition: all .5s;
@@ -55,7 +55,7 @@ footer {
 }
 
 @media (max-width: 769px) {
-    .footer-contact-us-box button {
+    animeted {
         color: #ffff;
         background-color: #007bbf;
     }

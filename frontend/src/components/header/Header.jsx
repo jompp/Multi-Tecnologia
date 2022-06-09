@@ -13,10 +13,6 @@ import { Link, useLocation } from 'react-router-dom'
 
     const [status, setStatus] = useState('home')  
     const url = useLocation().pathname;
-    
-    const changeRoute = () => {
-      scrollToTop()
-    }
 
     useEffect(() => {
       if(url == '/servicos') {
@@ -24,6 +20,12 @@ import { Link, useLocation } from 'react-router-dom'
       }
       else if(url == '/cases') {
         setStatus('cases')
+      }
+      else if(url == '/contato') {
+        setStatus('contato')
+      }
+      else if(url == '/parceria') {
+        setStatus('parceria')
       }
       else {
         setStatus('home')
@@ -45,11 +47,11 @@ import { Link, useLocation } from 'react-router-dom'
             <span></span>
           </label>
           <ul>
-            <li className={status == 'home' ? 'active' : ''} onClick={changeRoute}><Link to="/">Página Inicial</Link></li>
-            <li className={status == 'servicos' ? 'active' : ''} onClick={changeRoute}><Link to="/servicos">Nossos Serviços</Link></li>
-            <li className={status == 'cases' ? 'active' : ''} onClick={changeRoute}><Link to="/cases">Cases</Link></li>
-            <li onClick={changeRoute}><Link to="/">Seja um Parceiro</Link></li>
-            <li onClick={changeRoute}><Link to="/">Contato</Link></li>
+            <li className={status == 'home' ? 'active' : ''} onClick={scrollToTop}><Link to="/">Página Inicial</Link></li>
+            <li className={status == 'servicos' ? 'active' : ''} onClick={scrollToTop}><Link to="/servicos">Nossos Serviços</Link></li>
+            <li className={status == 'cases' ? 'active' : ''} onClick={scrollToTop}><Link to="/cases">Cases</Link></li>
+            <li onClick={scrollToTop}><Link to="/">Seja um Parceiro</Link></li>
+            <li className={status == 'contato' ? 'active' : ''} onClick={scrollToTop}><Link to="/contato">Contato</Link></li>
           </ul>
         </nav>
       </header>

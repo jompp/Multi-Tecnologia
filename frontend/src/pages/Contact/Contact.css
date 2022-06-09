@@ -1,0 +1,76 @@
+.ctt-txt-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    height: 5.625rem;
+}
+
+.ctt-txt-box h3 {
+    color: #3367D6;
+}
+
+.form-box {
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    flex-direction: column ;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.ctt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.ctt-form input, .ctt-form textarea {
+    width: 35vw;
+    height: 45px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+}
+
+.ctt-form input:focus, .ctt-form textarea:focus {
+    border: 2px solid #3367D6;   
+}
+
+input:focus-visible, textarea:focus-visible {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;   
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: .85rem;
+}
+
+input {
+    padding: 0 1rem;
+}
+
+textarea {
+    resize: none;
+    padding: .9rem 1rem;
+}
+
+.ctt-form textarea {
+    height: 150px;
+}
+
+.ctt-form .submit-btn {
+    width: auto;
+    padding: 0 5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 2px solid #007bbf;
+}
+
+.ctt-form .submit-btn:hover {
+    background-color: #007bbf;
+    transition: all .5s;
+    color: #ffffff;
+}

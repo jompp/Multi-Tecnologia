@@ -90,11 +90,11 @@ header ul {
 header a {
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;    
 }
 
 header li {
     position: relative;
-    cursor: pointer;
     max-width: max-content;
     text-align: center;
 }
@@ -123,6 +123,16 @@ header li:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+header li.active:before {
+    height: 3.2px;
+    background-color: #005e90;
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
 }
 
 @media (max-width: 1300px) {
@@ -165,7 +175,6 @@ header li:hover:before {
         transition: all 2s;
         padding: 3.5rem 0;
         border-radius: 10px 0 0 10px;
-
     }
     
     #menu-checkbox:checked ~ ul {
@@ -174,6 +183,15 @@ header li:hover:before {
 
     #menu-checkbox:checked ~ ul {
         right: 0;
+    }
+
+    header li.active:before {
+        bottom: 0;
+        border-radius: 100%;
+        width: 6px;
+        height: 6px;
+        left: 115%;
+        bottom: calc(50% - 4px);
     }
 }
 

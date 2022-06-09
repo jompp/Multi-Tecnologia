@@ -1,17 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css'
 import logo from '../../images/logo.png'
-import { Link } from 'react-router-dom'
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0, 
-      behavior: 'auto'
-    });
-  }
+import { Link, useLocation } from 'react-router-dom'
 
   export function Header() {
-  return (
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0, 
+        behavior: 'auto'
+      });
+    }
+
+    const [status, setStatus] = useState('home')  
+    const url = useLocation().pathname;
+
+    useEffect(() => {
+      if(url == '/servicos') {
+        setStatus('servicos') 
+      }
+      else if(url == '/cases') {
+        setStatus('cases')
+      }
+      else if(url == '/contato') {
+        setStatus('contato')
+      }
+      else if(url == '/parceria') {
+        setStatus('parceria')
+      }
+      else {
+        setStatus('home')
+      }
+    },[url])
+
+    return (
     <div className='header-box'>
       <header>
         <figure>
@@ -26,11 +47,11 @@ import { Link } from 'react-router-dom'
             <span></span>
           </label>
           <ul>
-            <li onClick={scrollToTop}><Link to="/">Página Inicial</Link></li>
-            <li onClick={scrollToTop}><Link to="/servicos">Nossos Serviços</Link></li>
-            <li onClick={scrollToTop}><Link to="/cases">Cases</Link></li>
+            <li className={status == 'home' ? 'active' : ''} onClick={scrollToTop}><Link to="/">Página Inicial</Link></li>
+            <li className={status == 'servicos' ? 'active' : ''} onClick={scrollToTop}><Link to="/servicos">Nossos Serviços</Link></li>
+            <li className={status == 'cases' ? 'active' : ''} onClick={scrollToTop}><Link to="/cases">Cases</Link></li>
             <li onClick={scrollToTop}><Link to="/">Seja um Parceiro</Link></li>
-            <li onClick={scrollToTop}><Link to="/">Contato</Link></li>
+            <li className={status == 'contato' ? 'active' : ''} onClick={scrollToTop}><Link to="/contato">Contato</Link></li>
           </ul>
         </nav>
       </header>

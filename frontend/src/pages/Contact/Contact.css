@@ -52,6 +52,14 @@ input {
     padding: 0 1rem;
 }
 
+.invalid-input {
+    border: 2px solid #d63333; 
+}
+
+.input-err-msg {
+    color: #d63333;
+}
+
 textarea {
     resize: none;
     padding: .9rem 1rem;

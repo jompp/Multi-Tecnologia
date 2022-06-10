@@ -3,6 +3,9 @@ import { Brand } from '../../components/brand/Brand'
 import { Footer } from '../../components/footer/Footer'
 import { Header } from '../../components/header/Header'
 import './Contact.css'
+import axios from "axios"
+import api from '../../../src/services/api'
+import { Loading } from '../../components/loading/Loading'
 
 export function Contact() {
     const [user, setUser] = useState({
@@ -16,11 +19,12 @@ export function Contact() {
     [statusName, setStatusName] = useState({type: '', message: ''}), 
     [statusPhone, setStatusPhone] = useState({type: '', message: ''}),
     [statusEmail, setStatusEmail] = useState({type: '', message: ''}),
-    [statusMessage, setStatusMessage] = useState({type: '', message: ''})
+    [statusMessage, setStatusMessage] = useState({type: '', message: ''}),
+    [sending, setSending] = useState(false)
     
     function validate(){
         let erro = false;
-        if(!user.userName) {
+        if(!user.userName || user.userName.trim() == "") {
             setStatusName({type: 'error', message: 'Necessário preencher esse campo!'})
             erro = true
         } 
@@ -53,7 +57,7 @@ export function Contact() {
         else {
             setStatusPhone({type: 'success'})
         }
-        if(!user.userMessage) {
+        if(!user.userMessage || user.userMessage.trim() == "") {
             setStatusMessage({type: 'error', message: 'Necessário preencher esse campo!'})
             erro = true
         }
@@ -75,6 +79,15 @@ export function Contact() {
             })
         }
         else {
+            setSending(true)
+            const res = await api.post('/form-contato',
+            {
+                name: user.userName,
+                phone: user.userPhone,
+                email: user.userEmail,
+                message: user.userMessage
+            })
+            setSending(false)
             setStatus({
                 type: 'success',
                 message: "Messagem enviada com sucesso!"
@@ -114,8 +127,10 @@ export function Contact() {
                     <div className='input-err-box'>
                         <textarea className={statusMessage.type === 'error' ? 'invalid-input' : ''} name="userMessage" placeholder='Deixe aqui sua messagem' onChange={valueInput} value={user.userMessage} required maxLength={294}></textarea>
                         {statusMessage.type === 'error' ? <p className='input-err-msg'>{statusMessage.message}</p> : ''}
+                        {status.type === 'error' && statusMessage.type === 'success' ? <p className='not-send-msg'>{status.message}</p> : ''}
+                    
                     </div>
-                    <input onClick={sendForm} className='submit-btn' type="submit" value="Enviar"/>
+                    <button onClick={sendForm} className='submit-btn' type="submit">{sending ? <Loading /> : 'Enviar'}</button>
                 </form>
             </div>
         </div>

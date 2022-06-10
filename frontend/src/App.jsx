@@ -1,8 +1,8 @@
 import './App.css'
-import { Home } from './pages/Home/Home'
-import { OurServices } from './pages/OurServices/OurServices'
-import { Cases } from './pages/Cases/Cases'
-import { Contact } from './pages/Contact/Contact'
+import { Home } from '../public/pages/Home/Home'
+import { OurServices } from '../public/pages/OurServices/OurServices'
+import { Cases } from '../public/pages/Cases/Cases'
+import { Contact } from '../public/pages/Contact/Contact'
 import {
   BrowserRouter,
   Routes,

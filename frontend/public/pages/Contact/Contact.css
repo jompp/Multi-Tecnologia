@@ -73,7 +73,8 @@ textarea {
 
 .ctt-form .submit-btn {
     width: auto;
-    padding: 0 5rem;
+    padding: 1rem 5rem;
+    border-radius: 5px;
     background-color: #ffffff;
     cursor: pointer;
     border: 2px solid #007bbf;

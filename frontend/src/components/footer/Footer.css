@@ -21,7 +21,7 @@ footer {
     width: 120px;
 }
 
-.animated-btn {
+.footer-btn {
     font-size: .9rem;
     padding: .8rem 2rem;
     cursor: pointer;
@@ -30,7 +30,7 @@ footer {
     background-color: transparent;
 }
 
-.animated-btn:hover {
+.footer-btn:hover {
     color: #ffff;
     background-color: #007bbf;
     transition: all .5s;
@@ -55,7 +55,7 @@ footer {
 }
 
 @media (max-width: 769px) {
-    animeted {
+    .footer-btn {
         color: #ffff;
         background-color: #007bbf;
     }

@@ -97,7 +97,7 @@ export function Contact() {
                 <h3>Entre em contato com a gente! Conheça a nossa empresa e contrate os nossos serviços.</h3>
             </div>
             <div className='form-box'>
-                <h2>Nos envie uma messagem</h2>
+                <h3>Nos envie uma messagem</h3>
                 <form className='ctt-form' action="/form-contato" method="post">
                     <div className='input-err-box'>
                         <input className={statusName.type === 'error' ? 'invalid-input' : ''} type="text" name='userName' placeholder='Nome completo' onChange={valueInput} value={user.userName} required maxLength={40}/>

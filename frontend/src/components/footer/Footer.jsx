@@ -12,7 +12,7 @@ export function Footer() {
         <div className='footer-box'>
             <div className='footer-contact-us-box'>
                 <img src={logo} alt="Logo" />
-                <button className='animated-btn' onClick={() => window.location.href='/'}>Fale conosco</button>
+                <button className='footer-btn' onClick={() => window.location.href='/'}>Fale conosco</button>
             </div>
             <div className='socials-box'>
                 <p>Siga-nos nas redes</p>

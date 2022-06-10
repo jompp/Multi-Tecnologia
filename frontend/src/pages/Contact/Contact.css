@@ -8,6 +8,8 @@
 
 .ctt-txt-box h3 {
     color: #3367D6;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .form-box {
@@ -28,7 +30,7 @@
 }
 
 .ctt-form input, .ctt-form textarea {
-    width: 35vw;
+    width: 550px;
     height: 45px;
     background-color: #F0F0F0;
     border-radius: 5px;
@@ -81,4 +83,37 @@ textarea {
     background-color: #007bbf;
     transition: all .5s;
     color: #ffffff;
+}
+
+@media (max-width: 865px) {
+    .ctt-form input, .ctt-form textarea {
+        width: 450px;
+    }
+}
+
+@media (max-width: 769px) {
+    .ctt-form .submit-btn {
+        color: #ffff;
+        background-color: #007bbf;
+    }
+}
+
+@media (max-width: 530px) {
+    .ctt-form input, .ctt-form textarea {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 410px) {
+    .form-box {
+        align-items: center;
+    }
+
+    .ctt-txt-box h3, .form-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .input-err-msg {
+        font-size: .85rem;
+    }
 }

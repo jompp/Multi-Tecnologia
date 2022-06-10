@@ -5,6 +5,11 @@ import { SubmitButton } from '../../components/SubmitButton/SubmitButton'
 import './Partnership.css'
 
 export function Partnership() {
+
+    function teste() {
+        console.log("ta funcionando")
+    }
+
     return (
         <div>
             <Header />

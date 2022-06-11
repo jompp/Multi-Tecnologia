@@ -1,0 +1,22 @@
+.loading-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.loading-circle {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate-spin {
+    animation: spin 1s linear infinite;
+}

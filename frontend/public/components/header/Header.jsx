@@ -11,7 +11,7 @@ export function Header() {
     });
   }
 
-  const [status, setStatus] = useState('home')
+  const [status, setStatus] = useState('')
   const url = useLocation().pathname;
 
   useEffect(() => {

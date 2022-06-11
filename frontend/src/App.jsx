@@ -1,10 +1,10 @@
 import './App.css'
 
-import { Home } from './pages/Home/Home'
-import { OurServices } from './pages/OurServices/OurServices'
-import { Cases } from './pages/Cases/Cases'
-import { Contact } from './pages/Contact/Contact'
-import { Partnership } from './pages/Partnership/Partnership'
+import { Home } from '../public/pages/Home/Home'
+import { OurServices } from '../public/pages/OurServices/OurServices'
+import { Cases } from '../public/pages/Cases/Cases'
+import { Contact } from '../public/pages/Contact/Contact'
+import { Partnership } from '../public/pages/Partnership/Partnership'
 
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 

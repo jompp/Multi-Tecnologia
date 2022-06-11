@@ -1,0 +1,102 @@
+.pts-txt-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    height: 5.625rem;
+}
+
+.pts-txt-box h3 {
+    color: #3367D6;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.pts-form-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pts-form {
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 2rem;
+
+}
+
+.fields {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.pts-form .company-field,
+.pts-form .person-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+}
+
+.pts-form textarea {
+    height: 150px;
+    width: 35vw;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+}
+
+.pts-form input {
+    width: 35vw;
+    height: 45px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+}
+
+.pts-form input:focus,
+.pts-form textarea:focus {
+    border: 2px solid #3367D6;
+}
+
+@media (max-width: 730px) {
+    .fields {
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    .pts-form .company-field,
+    .pts-form .person-field {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pts-form .company-field input,
+    .pts-form .person-field input {
+        width: 80%;
+    }
+
+    .pts-form {
+        width: 100%;
+    }
+
+    .pts-form textarea {
+        width: 80%;
+    }
+
+}

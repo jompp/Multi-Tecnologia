@@ -71,15 +71,12 @@ export function Contact() {
     
     const sendForm = async e => {
         e.preventDefault()
-    
-        if(validate() == true) {
-            setStatus({
-                type: 'error',
-                message: "Erro: Messagem não enviada com sucesso!"
-            })
-        }
-        else {
+
+        setStatus({type: '', message: ''})
+
+        if(validate() == false) {
             setSending(true)
+
             const res = await api.post('/form-contato',
             {
                 name: user.userName,
@@ -87,17 +84,28 @@ export function Contact() {
                 email: user.userEmail,
                 message: user.userMessage
             })
-            setSending(false)
-            setStatus({
-                type: 'success',
-                message: "Messagem enviada com sucesso!"
-            })
-            setUser({
-                userName: '',
-                userPhone: '',
-                userEmail: '',
-                userMessage: ''
-            })
+            console.log(res)
+            setSending(false)   
+            
+            if(res.status == 200) {
+                console.log(res)
+                setStatus({
+                    type: 'success',
+                    message: "Messagem enviada com sucesso!"
+                })
+                setUser({
+                    userName: '',
+                    userPhone: '',
+                    userEmail: '',
+                    userMessage: ''
+                })
+            }
+            else {
+                setStatus({
+                    type: 'error',
+                    message: "Erro: Messagem não enviada com sucesso!"
+                })
+            }
         }
       }
 
@@ -127,8 +135,10 @@ export function Contact() {
                     <div className='input-err-box'>
                         <textarea className={statusMessage.type === 'error' ? 'invalid-input' : ''} name="userMessage" placeholder='Deixe aqui sua messagem' onChange={valueInput} value={user.userMessage} required maxLength={294}></textarea>
                         {statusMessage.type === 'error' ? <p className='input-err-msg'>{statusMessage.message}</p> : ''}
+                    </div>
+                    <div className='msg-status-box'>
                         {status.type === 'error' && statusMessage.type === 'success' ? <p className='not-send-msg'>{status.message}</p> : ''}
-                    
+                        {status.type === 'success' && statusMessage.type === 'success' ? <p className='send-msg'>{status.message}</p> : ''}
                     </div>
                     <button onClick={sendForm} className='submit-btn' type="submit">{sending ? <Loading /> : 'Enviar'}</button>
                 </form>

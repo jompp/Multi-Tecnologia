@@ -3,7 +3,6 @@ import { prisma } from "../prisma.js"
 
 class CreateContactModel {
     async exec({ name, phone, email, message }) {
-        console.log(name)
 
         const nameReGex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
 

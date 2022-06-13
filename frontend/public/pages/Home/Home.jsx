@@ -5,6 +5,8 @@ import { Footer } from '../../components/footer/Footer'
 import { Brand } from '../../components/brand/Brand'
 
 export function Home() {
+    document.title = 'Multi Geotecnologia - Soluções em Geoprocessamento'
+
     return (
         <>
             <Header />

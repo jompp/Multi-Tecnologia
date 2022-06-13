@@ -110,6 +110,8 @@ export function Contact() {
         }
     }
 
+    document.title = 'Entre em Contato - Multi Geotecnologia'
+
     return (
         <>
             <Header />

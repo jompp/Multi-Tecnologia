@@ -4,6 +4,7 @@ import { Footer } from '../../components/footer/Footer'
 import { Brand } from '../../components/brand/Brand'
 
 export function Cases() {
+    document.title = 'Cases - Multi Geotecnologia'
     return (
     <>
         <Header />

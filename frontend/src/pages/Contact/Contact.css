@@ -6,10 +6,12 @@
     height: 5.625rem;
 }
 
-.ctt-txt-box h3 {
+.ctt-txt-box h2, .ctt-txt-box h3 {
     color: #3367D6;
     text-align: center;
     padding: 0 2rem;
+    font-size: 20px;
+    font-weight: 600; 
 }
 
 .form-box {

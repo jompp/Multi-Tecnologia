@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import { Brand } from '../../components/brand/Brand'
 import { Footer } from '../../components/footer/Footer'
 import { Header } from '../../components/header/Header'
-import { SubmitButton } from '../../components/SubmitButton/SubmitButton'
 import './Contact.css'
-import axios from "axios"
 import api from '../../services/api'
 import { Loading } from '../../components/loading/Loading'
 

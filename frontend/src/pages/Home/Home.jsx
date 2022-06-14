@@ -3,10 +3,16 @@ import logo from '../../images/logo.png'
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
 import { Brand } from '../../components/brand/Brand'
+import { Link } from 'react-router-dom'
 
 export function Home() {
     document.title = 'Multi Geotecnologia - Soluções em Geoprocessamento'
-
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'auto'
+        });
+    }
     return (
         <>
             <Header />
@@ -71,8 +77,8 @@ export function Home() {
                             <p>Seja um parceiro da Multi, ou solicite os nossos serviços!</p>
                         </div>
                         <div id="ancoras">
-                            <a href="#">Parcerias</a>
-                            <a href="#">Entrar em contato</a>
+                            <Link to="/parceria" onClick={scrollToTop}>Parcerias</Link>
+                            <Link to="/contato" onClick={scrollToTop}>Entrar em contato</Link>
                         </div>
                     </div>
                 </div>

@@ -167,6 +167,10 @@
     height: 50%;
 
     border-top: solid 1px #3367D6;
+    
+    font-size: 20px;
+    
+    font-weight: 600;
 }
 
 #contatos-container #ancoras a {

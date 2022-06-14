@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import { Brand } from '../../components/brand/Brand'
 import { Footer } from '../../components/footer/Footer'
 import { Header } from '../../components/header/Header'
-import { SubmitButton } from '../../components/SubmitButton/SubmitButton'
 import './Contact.css'
-import axios from "axios"
-import api from '../../../src/services/api'
+import api from '../../services/api'
 import { Loading } from '../../components/loading/Loading'
 
 export function Contact() {
@@ -110,16 +108,17 @@ export function Contact() {
         }
     }
 
+    document.title = 'Entre em Contato - Multi Geotecnologia'
+
     return (
-        <>
-            <Header />
+    <>
+        <Header />
+        <main>
             <Brand sectionTitle='Contato' />
-            <div>
-                <div className='ctt-txt-box'>
-                    <h3>Entre em contato com a gente! Conheça a nossa empresa e contrate os nossos serviços.</h3>
-                </div>
+            <div className='ctt-txt-box'>
+                <h2>Entre em contato com a gente! Conheça a nossa empresa e contrate os nossos serviços.</h2>
             </div>
-            <div className='form-box'>
+            <section className='form-box'>
                 <h3>Nos envie uma messagem</h3>
                 <form className='ctt-form' action="/form-contato" method="post">
                     <div className='input-err-box'>
@@ -144,7 +143,8 @@ export function Contact() {
                     </div>
                     <button onClick={sendForm} className='submit-btn' type="submit">{sending ? <Loading /> : 'Enviar'}</button>
                 </form>
-            </div>
+            </section>
+        </main>
         <Footer />
     </>
   )

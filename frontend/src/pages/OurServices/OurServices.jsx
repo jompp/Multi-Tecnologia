@@ -5,6 +5,8 @@ import { Footer } from '../../components/footer/Footer'
 import { Brand } from '../../components/brand/Brand'
 
 export function OurServices() {
+    document.title = 'Nossos Serviços - Multi Geotecnologia'
+    
     return (
         <>
             <Header />

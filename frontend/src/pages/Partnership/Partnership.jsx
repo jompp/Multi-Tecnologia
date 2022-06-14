@@ -10,6 +10,8 @@ export function Partnership() {
         console.log("ta funcionando")
     }
 
+    document.title = 'Seja um Parceiro - Multi Geotecnologia'
+
     return (
         <div>
             <Header />
